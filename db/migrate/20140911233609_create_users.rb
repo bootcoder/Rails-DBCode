@@ -3,10 +3,10 @@ class CreateUsers < ActiveRecord::Migration
     create_table :users do |t|
       t.string :username
       t.string :password
-      t.boolean :admin
       t.string :cohort
       t.string :email
-      t.boolean :graduate
+      t.boolean :admin, default: false
+      t.boolean :graduate, default: false
 
       t.timestamps
     end
