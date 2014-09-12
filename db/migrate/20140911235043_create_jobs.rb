@@ -7,11 +7,11 @@ class CreateJobs < ActiveRecord::Migration
       t.string :location
       t.string :found_by
       t.string :status
-      t.text :notes
       t.string :contact
+      t.text :notes
       t.text :strengths
-      t.integer :intrique
       t.text :intrique_reason
+      t.integer :intrique
       t.date :due_date
       t.references :user, index: true
 
